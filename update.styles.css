@@ -1,0 +1,21 @@
+.btn-update {
+    position: absolute;
+    bottom: 0px;
+    height: 5rem;
+    color: #27ae60;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.btn-update__container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-update__icon {
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #27ae60;
+}

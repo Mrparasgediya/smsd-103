@@ -1,0 +1,110 @@
+.heading {
+  margin: 1.5rem 0;
+}
+
+.btn-edit {
+  color: #27ae60;
+  display: flex;
+  align-items: center;
+}
+
+.btn-edit > svg {
+  padding: 0 0.5rem;
+  fill: #27ae60;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.btn-more {
+  color: #17a2b8;
+  display: flex;
+  align-items: center;
+}
+
+.btn-more > svg {
+  padding: 0 0.5rem;
+  fill: #17a2b8;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.btn-delete {
+  color: #e74c3c;
+  display: flex;
+  align-items: center;
+}
+
+.btn-delete > svg {
+  fill: #e74c3c;
+  height: 2rem;
+  width: 2rem;
+}
+
+.btn-add {
+  height: 5rem;
+  color: #120078;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.btn-add__container,
+.btn-home__container {
+  display: flex;
+  align-items: center;
+  color: #120078;
+}
+
+.btn-add__icon,
+.btn-home__icon {
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #120078;
+}
+
+.btn-home__icon {
+  margin-left: 0.2rem;
+  margin-right: 1rem;
+}
+
+.page-indicator {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -30px;
+  right: 47%;
+  width: 100px;
+}
+
+.page-no {
+  margin: 0.5rem 2rem 0rem;
+  color: #120078;
+}
+
+.btn-prev > svg,
+.btn-next > svg {
+  height: 2rem;
+  width: 2rem;
+  fill: #120078;
+}
+
+.btn-prev,
+.btn-next {
+  padding: 0;
+  padding: 0.7rem 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  padding: 3rem;
+  text-align: center;
+  height: 100%;
+}
+
+table th {
+  padding: 1.5rem;
+  color: #120078;
+}

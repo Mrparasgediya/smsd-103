@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Student management system</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./global.styles.css" />
+    <link rel="stylesheet" href="./add.styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="header">
+          <h1 class="heading">Add New Student</h1>
+          <button class="btn" onclick="history.back()">
+            <div class="btn-goback__container">
+              <svg class="btn-goback__icon">
+                <use xlink:href="assets/icons.svg#icon-left" />
+              </svg>
+              <span>Go Back</span>
+            </div>
+          </button>
+        </div>
+        <div class="add-student">
+          <form class="form" action="#">
+            <div>
+              <input type="text" id="rno" placeholder="Roll no" />
+              <input type="text" id="rno" placeholder="Full name" />
+
+              <textarea
+                name="address"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Address"
+              ></textarea>
+            </div>
+            <div>
+              <div class="radio-container">
+                <div class="radio-heading">Gender</div>
+                <div class="wrapper">
+                  <input
+                    class="state"
+                    type="radio"
+                    name="app"
+                    id="a"
+                    value="a"
+                  />
+                  <label class="label" for="a">
+                    <div class="indicator"></div>
+                    <span class="text">Male</span>
+                  </label>
+                </div>
+                <div class="wrapper">
+                  <input
+                    class="state"
+                    type="radio"
+                    name="app"
+                    id="c"
+                    value="c"
+                  />
+                  <label class="label" for="c">
+                    <div class="indicator"></div>
+                    <span class="text">Female</span>
+                  </label>
+                </div>
+              </div>
+              <input
+                type="text"
+                placeholder="Date of birth"
+                onfocus="(this.type='date')"
+              />
+              <select>
+                <option value="value">Select Division</option>
+                <option value="value">TYBCA</option>
+                <option value="value">SYBCA</option>
+                <option value="value">FYBCA</option>
+              </select>
+              <input type="text" placeholder="Contact no" />
+            </div>
+            <button class="btn btn-add" type="submit">
+              <div class="btn-add__container">
+                <svg class="btn-add__icon">
+                  <use xlink:href="assets/icons.svg#icon-add-person" />
+                </svg>
+                <span>Add Student</span>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-text">Made By Paras Gediya &copy; 2020</footer>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Student management system</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./global.styles.css" />
+    <link rel="stylesheet" href="./more.styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="header">
+          <h1 class="heading">Student Information</h1>
+          <button class="btn" onclick="history.back()">
+            <div class="btn-goback__container">
+              <svg class="btn-goback__icon">
+                <use xlink:href="assets/icons.svg#icon-left" />
+              </svg>
+              <span>Go Back</span>
+            </div>
+          </button>
+        </div>
+        <div class="more__container">
+          <div class="field__container">
+            <div class="field">
+              <span>Roll No</span>
+              <span>1</span>
+            </div>
+            <div class="field">
+              <span>Full Name</span>
+              <span>Merritt Keaton Dudley</span>
+            </div>
+            <div class="field">
+              <span>Gender</span>
+              <span>Male</span>
+            </div>
+            <div class="field">
+              <span>address</span>
+              <span>6649 N Blue Gum St, New Orleans, Orleans, LA, 70116</span>
+            </div>
+            <div class="field">
+              <span>Date Of Birth</span>
+              <span>10-03-2001</span>
+            </div>
+            <div class="field">
+              <span>Division</span>
+              <span>FYBCA</span>
+            </div>
+            <div class="field">
+              <span>Contact No</span>
+              <span>8034480390</span>
+            </div>
+          </div>
+          <div class="btn-container">
+            <a href="update.html">
+              <button class="btn">
+                <div class="btn-edit">
+                  <span>Update</span>
+                  <svg>
+                    <use xlink:href="assets/icons.svg#icon-update" />
+                  </svg>
+                </div>
+              </button>
+            </a>
+            <button class="btn">
+              <div class="btn-delete">
+                <span>Delete</span>
+                <svg>
+                  <use xlink:href="assets/icons.svg#icon-delete" />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-text">Made By Paras Gediya &copy; 2020</footer>
+  </body>
+</html>

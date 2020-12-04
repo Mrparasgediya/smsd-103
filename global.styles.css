@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ecf0f3;
+  font-family: 'Baloo Thambi 2', cursive;
+  letter-spacing: 1.5px;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  margin-top: 100px;
+  height: 80vh;
+  width: 80vw;
+  font-size: 1.5rem;
+  border-radius: 65px;
+  background: #ecf0f3;
+  box-shadow: 18px 18px 30px #d1d9e6, -18px -18px 30px #ffffff;
+}
+
+.heading {
+  color: #120078;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+
+.main-container {
+  padding: 60px;
+  height: 75%;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  color: #120078;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 50px;
+  background: #ecf0f3;
+  box-shadow: 3px 3px 6px #d1d9e6, -3px -3px 6px #fff;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  border-radius: 50px;
+  background: #ecf0f3;
+  box-shadow: inset 2px 2px 5px #d1d9e6, inset -3px -3px 7px #fff;
+}
+
+
+.btn-goback__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #120078;
+}
+
+.btn-goback__container {
+  display: flex;
+  align-items: center;
+  color: #120078;
+}
+
+
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}

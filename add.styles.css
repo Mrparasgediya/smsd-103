@@ -1,0 +1,204 @@
+.add-student {
+    flex: 1;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form>div>input,
+form>div>textarea {
+    width: 60%;
+    margin: 2rem;
+    padding: 2rem;
+    border: none;
+    color: gray;
+    background: #ecf0f3;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+    font-size: 1.5rem;
+}
+
+form>div>input:focus {
+    outline: none;
+}
+
+form>div>textarea {
+    resize: none;
+    font-size: 2rem;
+}
+
+form>div>textarea:focus {
+    outline: none;
+}
+
+input {
+    color: gray;
+}
+
+input[type="date"] {
+    padding: 1.7rem 2rem;
+
+    font-size: 2rem;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+
+}
+
+form>div {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="radio"] {
+    box-shadow: none;
+}
+
+select {
+    background: #ecf0f3;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1.7rem 2rem;
+    color: gray;
+    width: 68%;
+    transform: translateX(2rem);
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    position: absolute;
+    bottom: 2rem;
+}
+
+.btn-add {
+    position: absolute;
+    bottom: 0px;
+    height: 5rem;
+    color: #120078;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.btn-add__container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-add__icon {
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #120078;
+}
+
+
+
+
+.wrapper {
+    margin: 8px 0;
+}
+
+.state {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1e-5;
+    pointer-events: none;
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+}
+
+.text {
+    margin-left: 16px;
+    opacity: .6;
+    transition: opacity .2s linear, transform .2s ease-out;
+}
+
+.indicator {
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    box-shadow:
+        -8px -4px 8px 0px #ffffff,
+        8px 4px 12px 0px #d1d9e6;
+    overflow: hidden;
+}
+
+.indicator::before,
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.indicator::before {
+    box-shadow:
+        -4px -2px 4px 0px #d1d9e6,
+        4px 2px 8px 0px #fff;
+}
+
+.indicator::after {
+    background-color: #ecf0f3;
+    box-shadow:
+        -4px -2px 4px 0px #fff,
+        4px 2px 8px 0px #d1d9e6;
+    transform: scale3d(1, 1, 1);
+    transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+}
+
+.state:checked~.label .indicator::after {
+    transform: scale3d(.975, .975, 1) translate3d(0, 10%, 0);
+    opacity: 0;
+}
+
+.state:focus~.label .text {
+    transform: translate3d(8px, 0, 0);
+    opacity: 1;
+}
+
+.label:hover .text {
+    opacity: 1;
+}
+
+.radio-container {
+    margin-left: 3rem;
+}
+
+.radio-heading {
+    color: gray;
+    margin-bottom: 2rem;
+}
